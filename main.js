@@ -5,7 +5,7 @@ const hiddenText = document.getElementById("textContainer");
 
 
 function topCoin() {
-    let id = Math.floor(Math.random() * coins.length);
+    const id = Math.floor(Math.random() * coins.length);
     //console.log(coins[id]);
     return coins[id];
 }
@@ -14,15 +14,16 @@ function howMuch() {
    return  (Math.random() * 1000).toFixed(2);
 }
 
-function iDeclare(amount, coin)  {
-    return `I am going to purchase $${amount} in ${coin}!!!`;
+function tellFortune(amount, coin)  {
+    return `Buy $${amount} in ${coin} to become a millionaire!!!`;
 }
 
 function handleClick() {
     const myCoin = topCoin();
     const amountCoin = howMuch();
-    const sentence = iDeclare(amountCoin, myCoin);
-    hiddenText.innerHTML = `<p>${sentence}</p>`;  // Display the fortune text
+    const sentence = tellFortune(amountCoin, myCoin);
+
+    hiddenText.innerHTML = `<p>${sentence}</p>`; 
     hiddenText.style.display = "block";
 
 }
