@@ -1,6 +1,6 @@
 const coins = ["BTC", "ADA", "ETH", "WMTx", "XRP", "SNEK", "MIN", "BASE"];
 
-button = document.getElementsByName("button");
+button = document.getElementsById("button");
 hiddenText = document.getElementById("textContainer");
 
 
@@ -14,7 +14,6 @@ function howMuch() {
    return  Math.random() * 1000;
 }
 
-
 function iDeclare(amount, coin)  {
     return `I am going to purchase $${amount} in ${coin}!!!`;
 }
@@ -26,10 +25,8 @@ function handleClick() {
     hiddenText.style.display="block";
     console.log(sentence);
 
-
+}
 
 
 
 button.addEventListener("click", handleClick);
-
-
