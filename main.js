@@ -1,4 +1,4 @@
-const coins = ["BTC", "ADA", "ETH", "WMTx", "XRP", "SNEK", "MIN", "BASE"];
+const coins = ["BTC", "ADA", "ETH", "WMTx", "XRP", "SNEK", "MIN", "BASE", "DOGE"];
 
 const button = document.getElementById("button");
 const hiddenText = document.getElementById("textContainer");
